@@ -3,7 +3,9 @@ Aide à la composition de musique pour boîte à musique programmable.
 
 # Spécifications
 Notes: CDEFGABCDEFGABC
+
 Peut sauvegarder et charger une composition
+
 Les paramètres du programme sont automatiquement sauvegardés
 
 # Cheat Code
