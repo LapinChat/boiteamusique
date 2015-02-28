@@ -9,7 +9,7 @@
 			"modernui" : 1
 		}
 ,
-		"rect" : [ 183.0, 121.0, 1323.0, 708.0 ],
+		"rect" : [ 295.0, 112.0, 1245.0, 820.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -432,7 +432,7 @@
 							"modernui" : 1
 						}
 ,
-						"rect" : [ 437.0, 323.0, 443.0, 235.0 ],
+						"rect" : [ 295.0, 112.0, 443.0, 235.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -460,6 +460,19 @@
 						"style" : "",
 						"subpatcher_template" : "",
 						"boxes" : [ 							{
+								"box" : 								{
+									"id" : "obj-26",
+									"maxclass" : "newobj",
+									"numinlets" : 2,
+									"numoutlets" : 1,
+									"outlettype" : [ "int" ],
+									"patching_rect" : [ 288.5, 492.671143, 29.5, 22.0 ],
+									"style" : "",
+									"text" : "+ 1"
+								}
+
+							}
+, 							{
 								"box" : 								{
 									"id" : "obj-62",
 									"maxclass" : "newobj",
@@ -626,9 +639,9 @@
 									"numinlets" : 1,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 211.5, 595.0, 83.0, 22.0 ],
+									"patching_rect" : [ 211.5, 595.0, 113.0, 22.0 ],
 									"style" : "",
-									"text" : "prepend write"
+									"text" : "prepend writeagain"
 								}
 
 							}
@@ -640,9 +653,9 @@
 									"numinlets" : 2,
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
-									"patching_rect" : [ 156.5, 669.0, 134.5, 50.0 ],
+									"patching_rect" : [ 156.5, 669.0, 144.5, 50.0 ],
 									"style" : "",
-									"text" : "write E:/Documents/Max/settings.json"
+									"text" : "write E:/Documents/GitHub/boiteamusique/settings.json"
 								}
 
 							}
@@ -1719,7 +1732,7 @@
 											"modernui" : 1
 										}
 ,
-										"rect" : [ 438.0, 339.0, 442.0, 166.0 ],
+										"rect" : [ 296.0, 128.0, 442.0, 166.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 1,
 										"default_fontsize" : 12.0,
@@ -2691,8 +2704,8 @@
 , 											{
 												"name" : "newobjYellow-1",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -2701,8 +2714,8 @@
 , 											{
 												"name" : "newobjYellow-2",
 												"default" : 												{
-													"fontsize" : [ 12.059008 ],
-													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+													"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+													"fontsize" : [ 12.059008 ]
 												}
 ,
 												"parentstyle" : "",
@@ -3023,6 +3036,15 @@
 							}
 , 							{
 								"patchline" : 								{
+									"destination" : [ "obj-20", 0 ],
+									"disabled" : 0,
+									"hidden" : 0,
+									"source" : [ "obj-26", 0 ]
+								}
+
+							}
+, 							{
+								"patchline" : 								{
 									"destination" : [ "obj-35", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
@@ -3081,10 +3103,9 @@
 							}
 , 							{
 								"patchline" : 								{
-									"destination" : [ "obj-20", 0 ],
+									"destination" : [ "obj-26", 0 ],
 									"disabled" : 0,
 									"hidden" : 0,
-									"midpoints" : [ 123.5, 478.0, 333.0, 478.0, 333.0, 522.0, 365.912842, 522.0 ],
 									"source" : [ "obj-30", 0 ]
 								}
 
@@ -3704,8 +3725,8 @@
 , 							{
 								"name" : "newobjYellow-1",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -3714,8 +3735,8 @@
 , 							{
 								"name" : "newobjYellow-2",
 								"default" : 								{
-									"fontsize" : [ 12.059008 ],
-									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+									"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+									"fontsize" : [ 12.059008 ]
 								}
 ,
 								"parentstyle" : "",
@@ -4023,20 +4044,20 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-58::obj-55" : [ "live.numbox[2]", "live.numbox[2]", 0 ],
-			"obj-58::obj-13" : [ "live.text[3]", "live.text[3]", 0 ],
-			"obj-58::obj-32" : [ "live.numbox[1]", "live.numbox[1]", 0 ],
 			"obj-58::obj-43" : [ "live.text[2]", "live.text[2]", 0 ],
-			"obj-58::obj-27" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-58::obj-32" : [ "live.numbox[1]", "live.numbox[1]", 0 ],
+			"obj-58::obj-21" : [ "live.text", "live.text", 0 ],
 			"obj-58::obj-36" : [ "live.text[1]", "live.text[1]", 0 ],
-			"obj-6" : [ "live.text[4]", "live.text[4]", 0 ],
 			"obj-58::obj-3" : [ "live.text[5]", "live.text[5]", 0 ],
-			"obj-58::obj-21" : [ "live.text", "live.text", 0 ]
+			"obj-6" : [ "live.text[4]", "live.text[4]", 0 ],
+			"obj-58::obj-13" : [ "live.text[3]", "live.text[3]", 0 ],
+			"obj-58::obj-27" : [ "live.numbox", "live.numbox", 0 ],
+			"obj-58::obj-55" : [ "live.numbox[2]", "live.numbox[2]", 0 ]
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "settings.json",
-				"bootpath" : "~/Max",
+				"bootpath" : "~/GitHub/boiteamusique",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
@@ -4104,8 +4125,8 @@
 , 			{
 				"name" : "newobjYellow-1",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
@@ -4114,8 +4135,8 @@
 , 			{
 				"name" : "newobjYellow-2",
 				"default" : 				{
-					"fontsize" : [ 12.059008 ],
-					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ]
+					"accentcolor" : [ 0.82517, 0.78181, 0.059545, 1.0 ],
+					"fontsize" : [ 12.059008 ]
 				}
 ,
 				"parentstyle" : "",
