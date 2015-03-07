@@ -3063,7 +3063,7 @@
 									"numoutlets" : 3,
 									"outlettype" : [ "", "", "" ],
 									"patching_rect" : [ 244.75, 31.0, 117.0, 22.0 ],
-									"restore" : [ 150.0 ],
+									"restore" : [ 50.0 ],
 									"saved_object_attributes" : 									{
 										"parameter_enable" : 0
 									}
@@ -3777,7 +3777,7 @@
 													"outlettype" : [ "" ],
 													"patching_rect" : [ 1012.0, 129.0, 84.0, 22.0 ],
 													"style" : "",
-													"text" : "offset -1560 0"
+													"text" : "offset -1570 0"
 												}
 
 											}
@@ -5871,8 +5871,8 @@
 		"parameters" : 		{
 			"obj-58::obj-21" : [ "live.text", "live.text", 0 ],
 			"obj-58::obj-3" : [ "live.text[5]", "live.text[5]", 0 ],
-			"obj-58::obj-55" : [ "live.numbox[2]", "live.numbox[2]", 0 ],
 			"obj-58::obj-32" : [ "live.numbox[1]", "live.numbox[1]", 0 ],
+			"obj-58::obj-55" : [ "live.numbox[2]", "live.numbox[2]", 0 ],
 			"obj-58::obj-27" : [ "live.numbox", "live.numbox", 0 ],
 			"obj-58::obj-43" : [ "live.text[2]", "live.text[2]", 0 ],
 			"obj-58::obj-53" : [ "live.numbox[3]", "live.numbox[3]", 0 ],
